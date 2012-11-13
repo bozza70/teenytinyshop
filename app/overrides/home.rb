@@ -19,3 +19,8 @@ Deface::Override.new(:virtual_path => "spree/shared/_footer",
                  :name => "footer-left",
                  :replace_contents => "#footer-left", 
                  :text => "<p>Created and Designed By: Benit Solutions</p>")
+
+Deface::Override.new(:virtual_path => "spree/shared/_main_nav_bar", 
+                 :name => "menu",
+                 :insert_after => "#home-link", 
+                 :partial => 'home/menu')
